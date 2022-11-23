@@ -3,4 +3,5 @@ const clickMeButton = document.querySelector('.click-me');
 function clickHandler (){
     alert('You clicked me!');
 }
-clickMeButton.addEventListener('click',clickHandler)
+clickMeButton.addEventListener('click',clickHandler,{once:true})
+
