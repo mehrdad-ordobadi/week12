@@ -1,7 +1,13 @@
 const clickMeButton = document.querySelector('.click-me');
 // console.log(clickMeButton)
+
 function clickHandler (){
     alert('You clicked me!');
 }
-clickMeButton.addEventListener('click',clickHandler,{once:true})
+function changeBg (){
+    // document.body.style.backgroundColor = 'pink'
+    document.body.classList.add('bod')
+}
+// clickMeButton.addEventListener('click',clickHandler,{once:true})
+clickMeButton.addEventListener('click',changeBg);
 
