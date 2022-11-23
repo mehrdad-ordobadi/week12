@@ -8,6 +8,15 @@ function changeBg (){
     // document.body.style.backgroundColor = 'pink'
     document.body.classList.add('bod')
 }
+function btnClicked() {
+    if (clickMeButton.textContent === 'Click Me!'){
+        clickMeButton.textContent = 'Clicked!'
+    }
+    else{
+        clickMeButton.textContent = 'Click Me!'
+    }
+}
 // clickMeButton.addEventListener('click',clickHandler,{once:true})
-clickMeButton.addEventListener('click',changeBg);
+// clickMeButton.addEventListener('click',changeBg);
+clickMeButton.addEventListener('click',btnClicked)
 
